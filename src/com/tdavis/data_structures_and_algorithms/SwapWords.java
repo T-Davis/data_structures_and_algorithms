@@ -1,11 +1,32 @@
 package com.tdavis.data_structures_and_algorithms;
 
+/**
+ * Given a String, return a String with the words in the opposite order
+ * <p>
+ * Parameters
+ * Input: str {String}
+ * Output: {String}
+ * <p>
+ * Constraints
+ * Time: O(N)
+ * Space: O(N)
+ * <p>
+ * Examples
+ * "Everybody's working for the weekend" --> "weekend the for working Everybody's"
+ * "Testing this class" --> "class this Testing"
+ * "Is today a great day" --> "day great a today Is"
+ */
+
 public class SwapWords {
 
     public String reverseWordOrder(String str) {
+        // String to char array
         char[] arr = str.toCharArray();
+        // reverse the array
         reverseArr(arr, 0, arr.length - 1);
+        // reverse each word in array
         reverseWords(arr);
+        // return array as String
         return new String(arr);
     }
 
@@ -39,14 +60,20 @@ public class SwapWords {
 
 class SwapWordsTest {
     public static void main(String[] args) {
-        String input = "everybody's working for the weekend";
         SwapWords testClass = new SwapWords();
+        String[] inputs = new String[]{
+                "Everybody's working for the weekend",
+                "Testing this class",
+                "Is today a great day"
+        };
 
-        test(input, testClass);
+        test(inputs, testClass);
     }
 
-    private static void test(String input, SwapWords swapWords) {
-        System.out.println("input:\n" + input);
-        System.out.println("output:\n" + swapWords.reverseWordOrder(input));
+    private static void test(String[] inputs, SwapWords swapWords) {
+        for (String str : inputs) {
+            System.out.println("input:\n" + str);
+            System.out.println("output:\n" + swapWords.reverseWordOrder(str) + "\n");
+        }
     }
 }
