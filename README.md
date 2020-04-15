@@ -2,7 +2,7 @@
 
 This is a project for me!
 
-This will be an ongoing collection of problems and solutions I'm working on or haved solved.
+This will be an ongoing collection of problems and solutions I'm working on or have solved.
 I'm looking forward to reviewing all the great, and potentially ridiculous, approaches I will have taken, lending study
 material and eye rolls for interviews and the like.
 
