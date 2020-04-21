@@ -60,17 +60,18 @@ public class SwapWords {
 
 class SwapWordsTest {
     public static void main(String[] args) {
-        SwapWords testClass = new SwapWords();
+        SwapWords swapWords = new SwapWords();
+        SwapWordsTest swapWordsTest = new SwapWordsTest();
         String[] inputs = new String[]{
                 "Everybody's working for the weekend",
                 "Testing this class",
                 "Is today a great day"
         };
 
-        test(inputs, testClass);
+        swapWordsTest.test(inputs, swapWords);
     }
 
-    private static void test(String[] inputs, SwapWords swapWords) {
+    private void test(String[] inputs, SwapWords swapWords) {
         for (String str : inputs) {
             System.out.println("input:\n" + str);
             System.out.println("output:\n" + swapWords.reverseWordOrder(str) + "\n");

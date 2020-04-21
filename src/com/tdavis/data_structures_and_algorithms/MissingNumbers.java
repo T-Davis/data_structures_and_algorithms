@@ -18,9 +18,9 @@ import java.util.*;
  * Space: O(N)
  * <p>
  * Examples
- * `4, [1, 4, 2] --> [3]`
- * `8, [4, 7, 1, 6] --> [2, 3, 5, 8]`
- * `6, [6, 4, 2, 1] --> [3, 5]`
+ * 4, [1, 4, 2] --> [3]
+ * 8, [4, 7, 1, 6] --> [2, 3, 5, 8]
+ * 6, [6, 4, 2, 1] --> [3, 5]
  */
 
 public class MissingNumbers {
@@ -47,14 +47,14 @@ public class MissingNumbers {
 
 class MissingNumbersTest {
     public static void main(String[] args) {
-        MissingNumbers testClass = new MissingNumbers();
+        MissingNumbers missingNumbers = new MissingNumbers();
         Test[] inputs = new Test[]{
                 new Test(4, new int[]{1, 4, 2}),
                 new Test(8, new int[]{4, 7, 1, 6}),
                 new Test(6, new int[]{6, 4, 2, 1})
         };
 
-        test(inputs, testClass);
+        test(inputs, missingNumbers);
     }
 
     private static void test(Test[] inputs, MissingNumbers missingNumbers) {
